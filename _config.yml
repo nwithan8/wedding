@@ -7,8 +7,8 @@ baseurl: ""
 
 # Color settings
 color:
-  primary-dark: '#000000'
-  links: '#219ab3'
+  primary-dark: '#5c585f'
+  links: '#784ba2'
 
 # Footer settings
 footer: Lexi Nickens & Nate Harris
