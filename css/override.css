@@ -1,0 +1,5 @@
+.details-table td, .details-table td * {
+    vertical-align: top;
+    font-size: larger;
+    padding-bottom: 10px;
+}
