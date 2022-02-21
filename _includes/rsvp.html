@@ -7,13 +7,13 @@
                     <p>
                         A custom RSVP link was included in your email invite.
                         <br />
-                        If you lost the email invite, enter your email address below and click <b>Resend Invite</b>.
+                        If you lost the invite, enter your email address below and click <b>Resend Invite</b>.
                     </p>
-                    <label for="email">Email Address:</label><input type="email" id="email" size="30">
+                    <input type="email" id="email" size="50" width="100%" style="background-color: transparent;color: whitesmoke;border: 3px solid whitesmoke;">
                     <br />
-                    <button id="emailButton" class="btn btn-default btn-lg">Resent Invite</button>
+                    <button id="emailButton" class="btn btn-default btn-lg">Resend Invite</button>
                     <br />
-                    <p id="emailResult"></p>
+                    <p id="emailResult" style="font-size: small"></p>
                 </div>
             </div>
         </div>
@@ -31,13 +31,13 @@
                 url: url,
                 type: "POST",
                 success: function () {
-                    $("#emailButton").removeClass('btn-primary').addClass('btn-success');
+                    $("#emailButton").removeClass('btn-primary').addClass('btn-info');
                     $("#emailResult").text( "Your invite has been resent. Please check your inbox." );
                     $("#email").attr("disabled", "disabled");
                     $("#emailButton").prop("disabled",true);
                 },
                 error: function () {
-                    $("#emailButton").removeClass('btn-primary').addClass('btn-warning');
+                    $("#emailButton").removeClass('btn-primary').addClass('btn-danger');
                     $("#emailResult").text( "We could not find that email. Please use the email that the invite was originally sent to." );
                 }
             });
