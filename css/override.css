@@ -1,5 +1,71 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+.details-table {
+    margin: auto;
+}
+
 .details-table td, .details-table td * {
     vertical-align: top;
     font-size: larger;
+    margin-left: 20px;
     padding-bottom: 20px;
+}
+
+.photo-background {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+    background-color: #000000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.photo-background::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: gray;
+    opacity: 0.75;
+}
+
+.venue-section {
+    background: url(https://media.vrbo.com/lodging/24000000/23370000/23362400/23362390/f222a800.f10.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.rsvp-section {
+    background: url(https://media.vrbo.com/lodging/24000000/23370000/23362400/23362390/9bd50f76.f10.jpg) no-repeat center center scroll;
+    background-size: cover;
+}
+
+.content-section ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+.content-section dl {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+}
+
+.content-section p {
+    line-height: 1.3;
+    font-size: large;
+}
+
+.content-section h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
