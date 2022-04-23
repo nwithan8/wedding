@@ -13,6 +13,26 @@
     padding-bottom: 20px;
 }
 
+.schedule-table {
+    margin: auto;
+}
+
+.schedule-table td, .schedule-table td * {
+    font-size: larger;
+    padding-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+    text-indent: -20px;
+}
+
+.schedule-table a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
 .photo-background {
     position: relative;
     display: flex;
