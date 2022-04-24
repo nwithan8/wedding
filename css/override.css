@@ -33,6 +33,14 @@
     vertical-align: baseline;
 }
 
+#transportation li {
+    list-style-type: square;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
 .photo-background {
     position: relative;
     display: flex;
