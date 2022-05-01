@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-   line-height: 1.6;   
-}
-
 .details-table {
     margin: auto;
 }
@@ -22,7 +18,7 @@ body {
 }
 
 .schedule-table td, .schedule-table td * {
-    font-size: larger;
+    font-size: large;
     padding-bottom: 20px;
     text-align: left;
     padding-left: 20px;
@@ -41,7 +37,7 @@ body {
     list-style-type: square;
     text-align: left;
     margin-left: 20px;
-    font-size: 20px;
+    font-size: large;
     padding-bottom: 5px;
 }
 
@@ -79,6 +75,10 @@ body {
     background-size: cover;
 }
 
+.content-section {
+    line-height: 1.3;
+}
+
 .content-section ul {
     list-style: none;
     padding: 0;
@@ -100,4 +100,12 @@ body {
     font-size: 1.8em;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+.dress-section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-shadow: 4px 4px 5px grey;
+    background: url("../img/rainbow.jpg") no-repeat center center;
+    background-size: cover;
 }
