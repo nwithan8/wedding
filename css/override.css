@@ -41,6 +41,14 @@
     padding-bottom: 5px;
 }
 
+#covid li {
+    list-style-type: square;
+    text-align: left;
+    margin-left: 20px;
+    font-size: large;
+    padding-bottom: 5px;
+}
+
 .photo-background {
     position: relative;
     display: flex;
